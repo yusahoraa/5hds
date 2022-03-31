@@ -15,8 +15,8 @@ app.get('/users', (req,res) => {
 })
 
 app.get('/users/:token', (req,res) => {
-    const token = parseInt(req.params.token)
-    const user = users.find(user => user.token === token)
+    const token = req.params.token
+    const user = users.find(user => user.token == token)
     res.status(200).json(user)
 })
 
@@ -32,7 +32,7 @@ app.post('/users', (req,res) => {
 
 app.put('/users/:token', (req,res) => {
     const value = date.format(now,'YYYY/MM/DD HH:mm:ss');
-    const token = parseInt(req.params.token)
+    const token = req.params.token
     let user = users.find(user => user.token === token)
     user.nom = req.body.nom,
     user.prenom = req.body.prenom,
@@ -42,7 +42,7 @@ app.put('/users/:token', (req,res) => {
 })
 
 app.delete('/users/:token', (req,res) => {
-    const token = parseInt(req.params.token)
+    const token = req.params.token
     let user = users.find(user => user.token === token)
     users.splice(users.indexOf(user),1)
     res.status(200).json(users)
@@ -53,7 +53,7 @@ app.get('/produits', (req,res) => {
 })
 
 app.get('/produits/:token', (req,res) => {
-    const token = parseInt(req.params.token)
+    const token = req.params.token
     const produit = produits.find(produit => produit.token === token)
     res.status(200).json(produit)
 })
@@ -70,7 +70,7 @@ app.post('/produits', (req,res) => {
 
 app.put('/produits/:token', (req,res) => {
     const value = date.format(now,'YYYY/MM/DD HH:mm:ss');
-    const token = parseInt(req.params.token)
+    const token = req.params.token
     let produit = produits.find(produit => produit.token === token)
     produit.nom = req.body.nom,
     produit.desription = req.body.desription,
@@ -82,7 +82,7 @@ app.put('/produits/:token', (req,res) => {
 })
 
 app.delete('/produits/:token', (req,res) => {
-    const token = parseInt(req.params.token)
+    const token = req.params.token
     let produit = produits.find(produit => produit.token === token)
     produits.splice(produits.indexOf(produit),1)
     res.status(200).json(produits)
