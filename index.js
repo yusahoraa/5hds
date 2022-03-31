@@ -2,6 +2,8 @@ const express = require('express')
 const app = express()
 const users = require('./users.json')
 const produits = require('./produits.json')
+const date = require('date-and-time')
+const now  =  new Date();
 
 
 app.use(express.json())
@@ -24,13 +26,13 @@ app.post('/users', (req,res) => {
 })
 
 app.put('/users/:token', (req,res) => {
+    const value = date.format(now,'YYYY/MM/DD HH:mm:ss');
     const token = parseInt(req.params.token)
     let user = users.find(user => user.token === token)
     user.nom = req.body.nom,
     user.prenom = req.body.prenom,
     user.role = req.body.role,
-    user.created_at = req.body.created_at,
-    user.updated_at = req.body.updated_at,
+    user.updated_at = value,
     res.status(200).json(user)
 })
 
@@ -58,6 +60,7 @@ app.post('/produits', (req,res) => {
 })
 
 app.put('/produits/:token', (req,res) => {
+    const value = date.format(now,'YYYY/MM/DD HH:mm:ss');
     const token = parseInt(req.params.token)
     let produit = produits.find(produit => produit.token === token)
     produit.nom = req.body.nom,
@@ -65,8 +68,7 @@ app.put('/produits/:token', (req,res) => {
     produit.prix = req.body.prix,
     produit.stock = req.body.stock,
     produit.reference = req.body.reference,
-    produit.created_at = req.body.created_at,
-    produit.updated_at = req.body.updated_at,
+    produit.updated_at = value,
     res.status(200).json(produit)
 })
 
