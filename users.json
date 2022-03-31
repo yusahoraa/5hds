@@ -1,0 +1,42 @@
+[
+    {
+        "nom": "Ollivier",
+        "prenom":"Maxime",
+        "token": 1,
+        "role": "role 1",
+        "created_at": "",
+        "updated_at": ""
+    },
+    {
+        "nom": "Ollivier",
+        "prenom":"Félix",
+        "token": 2,
+        "role": "role 1",
+        "created_at": "",
+        "updated_at": ""
+    },
+    {
+        "nom": "Potin",
+        "prenom":"Mathéo",
+        "token": 3,
+        "role": "role 2",
+        "created_at": "",
+        "updated_at": ""
+    },
+    {
+        "nom": "Berger",
+        "prenom":"Maxence",
+        "token": 4,
+        "role": "role 3",
+        "created_at": "",
+        "updated_at": ""
+    },
+    {
+        "nom": "Peloux",
+        "prenom":"Eloi",
+        "token": 5,
+        "role": "role 3",
+        "created_at": "",
+        "updated_at": ""
+    }
+]

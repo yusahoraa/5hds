@@ -1,0 +1,12 @@
+[
+    {
+        "nom": "ordinateur",
+        "desription": "un odinateur banale",
+        "token": 1,
+        "prix": 1000,
+        "stock": 20,
+        "reference": "a38",
+        "created_at":"",
+        "updated_at":""
+    }
+]
