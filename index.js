@@ -20,6 +20,8 @@ app.get('/users/:token', (req,res) => {
 })
 
 app.post('/users', (req,res) => {
+    const value = date.format(now,'YYYY/MM/DD HH:mm:ss');
+    req.body.created_at = value
     users.push(req.body)
     res.status(200).json(users)
     console.log(users);
@@ -54,6 +56,8 @@ app.get('/produits/:token', (req,res) => {
 })
 
 app.post('/produits', (req,res) => {
+    const value = date.format(now,'YYYY/MM/DD HH:mm:ss');
+    req.body.created_at = value
     produits.push(req.body)
     res.status(200).json(produits)
     console.log(produits);
