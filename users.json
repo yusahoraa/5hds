@@ -10,7 +10,7 @@
     {
         "nom": "Ollivier",
         "prenom":"Félix",
-        "token": 2,
+        "token": "bc10c4d6-062e-4a11-933d-0c79dd9a89b1",
         "role": "role 1",
         "created_at": "2022/03/31 10:18:00",
         "updated_at": ""
@@ -18,7 +18,7 @@
     {
         "nom": "Potin",
         "prenom":"Mathéo",
-        "token": 3,
+        "token": "989eb88e-b7ca-4340-93ed-b59f6df7ca3a",
         "role": "role 2",
         "created_at": "2022/03/31 10:18:00",
         "updated_at": ""
@@ -26,7 +26,7 @@
     {
         "nom": "Berger",
         "prenom":"Maxence",
-        "token": 4,
+        "token": "815fb70e-1b16-4d21-9b2f-7312937c146f",
         "role": "role 3",
         "created_at": "2022/03/31 10:18:00",
         "updated_at": ""
@@ -34,7 +34,7 @@
     {
         "nom": "Peloux",
         "prenom":"Eloi",
-        "token": 5,
+        "token": "61aaf0b3-aea5-407a-8932-b08623de27b4",
         "role": "role 3",
         "created_at": "2022/03/31 10:18:48",
         "updated_at": ""

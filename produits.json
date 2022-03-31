@@ -2,7 +2,7 @@
     {
         "nom": "ordinateur",
         "desription": "un odinateur banale",
-        "token": 1,
+        "token": "7e75c4bf-29c7-454a-98a6-928d169a2756",
         "prix": 1000,
         "stock": 20,
         "reference": "a38",
